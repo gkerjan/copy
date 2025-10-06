@@ -1,24 +1,6 @@
 import {mat4} from "../lib/gl-matrix_3.3.0/esm/index.js"
 import {mat4_matmul_many} from "./icg_math.js"
-
-/*
-Draw a right-handed reference frame. 
-Each axis is represented by a parallelepiped. 
-The X-axis is red, the Y-axis is green, and the Z-axis is blue.
-*/
-export class SystemRenderFrame { 
-
-	constructor(regl) {
-		this.pipeline_quad = regl({
-            // Vertex attributes
-            attributes: {
-                // 4 vertices with 3 coordinates each
-                position: [
-                    // X-axis parallelepiped
-                    [-0.005, -0.005, -0.005], [0.33, -0.005, -0.005], [0.33, 0.005, -0.005], [-0.005, 0.005, -0.005],
-                    [-0.005, -0.005, 0.005], [0.33, -0.005, 0.005], [0.33, 0.005, 0.005], [-0.005, 0.005, 0.005],
-
-                    // Y-axis parallelepiped
+elepiped
                     [-0.005, -0.005, -0.005], [0.005, -0.005, -0.005], [0.005, 0.33, -0.005], [-0.005, 0.33, -0.005],
                     [-0.005, -0.005, 0.005], [0.005, -0.005, 0.005], [0.005, 0.33, 0.005], [-0.005, 0.33, 0.005],
 
