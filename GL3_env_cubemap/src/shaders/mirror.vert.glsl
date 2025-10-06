@@ -1,21 +1,4 @@
-// Vertex attributes, specified in the "attributes" entry of the pipeline
-attribute vec3 vertex_position;
-attribute vec3 vertex_normal;
 
-// Per-vertex outputs passed on to the fragment shader
-
-/* #TODO GL3.2.3
-	Setup the varying values needed to compue the Phong shader:
-	* surface normal
-	* view vector: direction to camera
-*/
-varying vec3 surface_normal;
-varying vec3 view_vector;
-
-// Global variables specified in "uniforms" entry of the pipeline
-uniform mat4 mat_mvp;
-uniform mat4 mat_model_view;
-uniform mat3 mat_normals_to_view;
 
 
 void main() {
