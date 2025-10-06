@@ -1,20 +1,3 @@
-precision highp float;
-
-/* #TODO GL3.3.1: Pass on the normals and fragment position in camera coordinates */
-varying vec3 normal_pos_in_cam_coord;
-varying vec3 frag_pos_in_cam_coord;
-varying vec2 v2f_uv;
-
-
-uniform vec3 light_position; // light position in camera coordinates
-uniform vec3 light_color;
-uniform samplerCube cube_shadowmap;
-uniform sampler2D tex_color;
-
-void main() {
-
-	float material_shininess = 12.;
-	float material_ambient = 1e-4;
 
 	/* #TODO GL3.1.1
 	Sample texture tex_color at UV coordinates and display the resulting color.
