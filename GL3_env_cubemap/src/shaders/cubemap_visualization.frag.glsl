@@ -1,15 +1,4 @@
-precision mediump float;
 
-varying vec2 v2f_position;
-
-uniform samplerCube cubemap_to_show;
-uniform samplerCube cubemap_annotation;
-uniform float color_factor;
-
-const float margin = 0.01;
-const vec3 margin_color = vec3(0.03, 0.75, 0.35);
-const vec3 arrow_color = vec3(0.91, 0.58, 0.08);
-const vec3 text_color = vec3(0.91, 0.28, 0.08);
 
 
 void main () {
